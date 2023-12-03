@@ -51,7 +51,9 @@ const MediasPage: React.FC = () => {
 
     const { getRootProps, getInputProps } = useDropzone({
         onDrop: handleDrop,
-        accept: "image/*",
+        accept: {
+            "image/*": [".jpeg", ".jpg", ".png"],
+        },
         multiple: false,
     });
 
