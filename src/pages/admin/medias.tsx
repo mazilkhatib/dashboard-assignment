@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, FC } from "react";
 import { useDropzone } from "react-dropzone";
 import Card from "@/components/Card";
-const MediasPage: React.FC = () => {
+const MediasPage: FC = () => {
     const [input, setInput] = useState("");
 
     const [description, setDescription] = useState("");
